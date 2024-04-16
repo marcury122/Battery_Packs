@@ -40,7 +40,7 @@ def calculate_adjusted_usage(ax, data, values, selected_days=None, selected_set=
             adjusted_interval_usage = usage_per_interval * (random_percentage / 100)
 
             y.append(adjusted_interval_usage/2)
-            print(f"Day {day + 1}, Time Range: {time_range}, Adjusted Usage: {adjusted_interval_usage}")
+            print(f"Day {day + 1}, Time Range: {time_range}, Adjusted Usage: {adjusted_interval_usage/2}")
 
         ax.plot(range(0, 24, 2), y, label=f"Day {day + 1}")
 
@@ -107,7 +107,7 @@ def calculate_adjusted_usage2(ax, data, values, selected_days=None, selected_set
             adjusted_interval_usage = usage_per_interval * (random_percentage / 100)
 
             y.append(adjusted_interval_usage/2)
-            print(f"Day {day + 1}, Time Range: {time_range}, Adjusted Usage: {adjusted_interval_usage}")
+            print(f"Day {day + 1}, Time Range: {time_range}, Adjusted Usage: {adjusted_interval_usage/2}")
 
         ax.plot(range(0, 24, 2), y, label=f"Day {day + 1}")
 
